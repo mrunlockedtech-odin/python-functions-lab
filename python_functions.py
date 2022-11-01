@@ -19,10 +19,23 @@ import re
 
 # Exercise 3
 
-def occurrences(total_string, sub_string):
-  return len(re.findall(sub_string,total_string))
-  
-print(occurrences('fleep floop', 'e'))
-print(occurrences('fleep floop', 'p'))
-print(occurrences('fleep floop', 'ee'))
-print(occurrences('fleep floop', 'fe'))
+# def occurrences(total_string, sub_string):
+#   return len(re.findall(sub_string,total_string))
+
+# print(occurrences('fleep floop', 'e'))
+# print(occurrences('fleep floop', 'p'))
+# print(occurrences('fleep floop', 'ee'))
+# print(occurrences('fleep floop', 'fe'))
+
+# Exercise 4
+def product(*args):
+  finalProduct = 1
+  for arg in args:
+    finalProduct *= arg
+  return finalProduct
+
+print(product(-1,4))
+
+print(product(2, 5, 5))
+
+print(product(4, 0.5, 5))
